@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Chat!</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Oxygen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="chatapp.css">
+
+</head>
+
+<body>
+    <button id="logout_button" onclick="logout();" class="btn btn-danger">Logout</button>
+    <br>
+    <br>
+    <center>
+        <div id="send_div">
+            <h4 id="letschat">Let's Chat!</h4>
+            <hr style="height:2px;border-width:0;width:400px;color:#316B83;background-color:#316B83">
+            <div id="output"></div>
+        </div>
+
+        <div id="send_div">
+            <input id="message_input" class="form-control" placeholder="Write your message here.">
+            <br>
+            <button class="btn btn-success" id="send_button" onclick="send();">Send</button>
+        </div>
+    </center>
+    <script src="chatapp_page.js"></script>
+</body>
+
+</html>

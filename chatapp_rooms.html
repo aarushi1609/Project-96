@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Chat!</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Oxygen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="chatapp.css">
+
+</head>
+
+<body>
+    <button id="logout_button" class="btn btn-danger" onclick="logout();">Logout</button>
+    <center>
+        <br>
+        <div id="room_div">
+            <h3 id="letschat">Let's Chat!</h3>
+            <hr style="height:2px;border-width:0;width:400px;color:#316B83;background-color:#316B83">
+            <label id="welcome">Welcome!</label>
+            <br>
+            <label>Add Room</label>
+            <input class="form-control" placeholder="Enter a room name here." id="add_room_input">
+            <br>
+            <button id="addRoom" onclick="addRoom();" class="btn btn-primary">Add Room</button>
+        </div>
+
+        <div id="room_div">
+            <h3>Trending Rooms</h3>
+            <hr style="height:2px;border-width:0;width:400px;color:#316B83;background-color:#316B83">
+            <div id="output"></div>
+        </div>
+
+
+    </center>
+    <script src="chatapp_room.js"></script>
+</body>
